@@ -12,4 +12,6 @@ RUN \
   apt-get install -y ./wkhtmltox.deb && \
   rm -Rf wkhtmltox.deb
 
+RUN ln -sf /bin/bash /bin/sh
+
 ENTRYPOINT [ "gwtc" ]
